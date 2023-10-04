@@ -62,10 +62,10 @@
             </objects>
             <point key="canvasLocation" x="1049.6183206106871" y="-2.1126760563380285"/>
         </scene>
-        <!--View Controller-->
+        <!--RecordingVC-->
         <scene sceneID="7gv-Te-PB7">
             <objects>
-                <viewController id="e6b-7B-P8t" sceneMemberID="viewController">
+                <viewController id="e6b-7B-P8t" customClass="RecordingVC" customModule="TechCareer_7_Odev_OgrenciNotlari" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qNX-3o-AIR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,15 +116,20 @@
                             <constraint firstItem="OPG-jz-QkZ" firstAttribute="top" secondItem="czA-CT-YoT" secondAttribute="bottom" constant="80" id="zuO-ZF-GmW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="eMK-EM-HAc" id="Ynd-qq-axl"/>
+                        <outlet property="saveButton" destination="OPG-jz-QkZ" id="PyK-cK-Tuo"/>
+                        <outlet property="scoreLabel" destination="czA-CT-YoT" id="O5I-XG-6Er"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FfY-uu-LWF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2110.6870229007632" y="-275.35211267605638"/>
         </scene>
-        <!--View Controller-->
+        <!--DetailsVC-->
         <scene sceneID="tNo-xp-9mT">
             <objects>
-                <viewController id="Xtj-fJ-HJd" sceneMemberID="viewController">
+                <viewController id="Xtj-fJ-HJd" customClass="DetailsVC" customModule="TechCareer_7_Odev_OgrenciNotlari" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Juq-Cc-wrl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -144,7 +149,7 @@
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="SAVE">
+                                <buttonConfiguration key="configuration" style="plain" title="UPDATE">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
                                 </buttonConfiguration>
                             </button>
@@ -163,6 +168,11 @@
                             <constraint firstItem="qZj-go-8hO" firstAttribute="top" secondItem="tik-N6-dMQ" secondAttribute="top" constant="149" id="xXh-Mg-iTe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="qZj-go-8hO" id="h2d-6E-YxA"/>
+                        <outlet property="scoreLabel" destination="0Py-46-zHN" id="54q-oN-BvN"/>
+                        <outlet property="updateButton" destination="yld-fO-krU" id="TQY-3I-n5O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dM7-uk-ciA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

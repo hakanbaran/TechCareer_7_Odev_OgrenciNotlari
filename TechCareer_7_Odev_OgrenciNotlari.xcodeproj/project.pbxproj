@@ -23,6 +23,9 @@
 		D487502A2ACE1B7A00B7A737 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = D48750292ACE1B7A00B7A737 /* RxRelay */; };
 		D487502C2ACE215400B7A737 /* RecordingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D487502B2ACE215400B7A737 /* RecordingVC.swift */; };
 		D487502E2ACE215F00B7A737 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D487502D2ACE215F00B7A737 /* DetailsVC.swift */; };
+		D48750302ACE253B00B7A737 /* HomeVCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D487502F2ACE253B00B7A737 /* HomeVCViewModel.swift */; };
+		D48750322ACE254B00B7A737 /* RecordingVCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48750312ACE254B00B7A737 /* RecordingVCViewModel.swift */; };
+		D48750342ACE255800B7A737 /* DetailsVCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48750332ACE255800B7A737 /* DetailsVCViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		D487501E2ACE1B4000B7A737 /* StudentsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsRepository.swift; sourceTree = "<group>"; };
 		D487502B2ACE215400B7A737 /* RecordingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingVC.swift; sourceTree = "<group>"; };
 		D487502D2ACE215F00B7A737 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		D487502F2ACE253B00B7A737 /* HomeVCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCViewModel.swift; sourceTree = "<group>"; };
+		D48750312ACE254B00B7A737 /* RecordingVCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingVCViewModel.swift; sourceTree = "<group>"; };
+		D48750332ACE255800B7A737 /* DetailsVCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVCViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,9 @@
 		D48750142ACE144000B7A737 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				D487502F2ACE253B00B7A737 /* HomeVCViewModel.swift */,
+				D48750312ACE254B00B7A737 /* RecordingVCViewModel.swift */,
+				D48750332ACE255800B7A737 /* DetailsVCViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -237,8 +246,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D48750302ACE253B00B7A737 /* HomeVCViewModel.swift in Sources */,
+				D48750342ACE255800B7A737 /* DetailsVCViewModel.swift in Sources */,
 				D487502C2ACE215400B7A737 /* RecordingVC.swift in Sources */,
 				D487502E2ACE215F00B7A737 /* DetailsVC.swift in Sources */,
+				D48750322ACE254B00B7A737 /* RecordingVCViewModel.swift in Sources */,
 				D48750032ACE133700B7A737 /* HomeVC.swift in Sources */,
 				D4874FFF2ACE133700B7A737 /* AppDelegate.swift in Sources */,
 				D487501D2ACE1AC000B7A737 /* Students.swift in Sources */,
