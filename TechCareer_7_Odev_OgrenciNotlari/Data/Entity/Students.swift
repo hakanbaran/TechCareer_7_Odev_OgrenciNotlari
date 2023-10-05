@@ -13,7 +13,6 @@ class Students {
     var student_id: Int?
     var student_name: String?
     var student_score: String?
-    
     init() {
     }
     

@@ -33,7 +33,6 @@ class HomeVC: UIViewController {
             self.tableView.reloadData()
         }
         )
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -51,17 +50,15 @@ class HomeVC: UIViewController {
             }
         }
     }
-    
-
-    
-    
-
-
 }
 
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return studentArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -84,12 +81,12 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         let deleteAction = UIContextualAction(style: .destructive, title: "Delete"){ contextualAction,view,bool in
             let student = self.studentArray[indexPath.row]
             
-            let alert = UIAlertController(title: "Delete Student?", message: "\(student) silinsi mi?", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Delete Student?", message: "\(student) deleted???", preferredStyle: .alert)
             
-            let iptalAction = UIAlertAction(title: "İptal", style: .cancel)
+            let iptalAction = UIAlertAction(title: "Cancel", style: .cancel)
             alert.addAction(iptalAction)
             
-            let evetAction = UIAlertAction(title: "Evet", style: .destructive){ action in
+            let evetAction = UIAlertAction(title: "Yes", style: .destructive){ action in
                 self.viewModel.delete(student_id: student.student_id!)
             }
             alert.addAction(evetAction)
@@ -97,11 +94,6 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         }
         return UISwipeActionsConfiguration(actions: [deleteAction])
     }
-    
-    
-    
-    
-    
 }
 
 extension HomeVC: UISearchBarDelegate {

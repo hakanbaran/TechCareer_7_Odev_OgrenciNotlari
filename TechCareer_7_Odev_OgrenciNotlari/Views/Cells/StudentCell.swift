@@ -13,8 +13,16 @@ class StudentCell: UITableViewCell {
     
     private let studentName: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 18, weight: .regular)
+        label.font = .systemFont(ofSize: 22, weight: .regular)
         label.text = "Hakan Baran"
+        label.textColor = .label
+        return label
+    }()
+    
+    private let studentClass: UILabel = {
+        let label = UILabel()
+        label.font = .systemFont(ofSize: 18, weight: .regular)
+        label.text = "Maths"
         label.textColor = .label
         return label
     }()
@@ -25,6 +33,8 @@ class StudentCell: UITableViewCell {
         label.backgroundColor = .lightGray
         label.textAlignment = .center
         label.text = "75"
+        label.layer.masksToBounds = true
+        label.layer.cornerRadius = 24
         label.textColor = .label
         return label
     }()
@@ -33,6 +43,7 @@ class StudentCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         contentView.addSubview(studentName)
         contentView.addSubview(studentScore)
+        contentView.addSubview(studentClass)
     }
     
     required init?(coder: NSCoder) {
@@ -45,10 +56,11 @@ class StudentCell: UITableViewCell {
         let height = contentView.frame.height
         
         studentName.frame = CGRect(x: width/25, y: height/5, width: width/3, height: height/2)
-        studentScore.frame = CGRect(x: width-width/10-width/25, y: height/5, width: width/10, height: height/2)
+        studentClass.frame = CGRect(x: width/2-width/22, y: height/5, width: width/3, height: height/2)
+        studentScore.frame = CGRect(x: width-width/6, y: height/5-height/10, width: width/9, height: width/9)
     }
     
-    public func configure(name: String, score: String  ) {
+    public func configure(name: String, score: String) {
         studentName.text = name
         studentScore.text = score
     }

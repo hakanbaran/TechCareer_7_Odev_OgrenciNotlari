@@ -18,26 +18,17 @@ class StudentsRepository {
         
         let targetPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
         let databeseURL = URL(fileURLWithPath: targetPath).appendingPathComponent("TechCareer_7_Odev.sqlite")
-        
         db = FMDatabase(path: databeseURL.path)
-        
+
     }
     
-    
     func saveStudent(student_name: String, student_score: String) {
-        
         db?.open()
-        
         do {
-            
             try db!.executeUpdate("INSERT INTO students (student_name,student_score) VALUES (?,?)", values: [student_name,student_score])
-            
-            
         } catch {
             print(error.localizedDescription)
         }
-        
-        
         db?.close()
     }
     
@@ -70,9 +61,7 @@ class StudentsRepository {
                 let student_id = Int(rs.string(forColumn: "student_id"))!
                 let student_name = rs.string(forColumn: "student_name")!
                 let student_score = rs.string(forColumn: "student_score")!
-                
                 let student = Students(student_id: student_id, student_name: student_name, student_score: student_score)
-                
                 array.append(student)
             }
             studentsArray.onNext(array)
@@ -132,9 +121,4 @@ class StudentsRepository {
                 }catch{}
             }
         }
-    
-    
-    
-    
-    
 }

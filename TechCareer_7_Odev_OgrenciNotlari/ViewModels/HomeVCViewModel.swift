@@ -14,13 +14,9 @@ class HomeVCViewModel {
     var sRepo = StudentsRepository()
     var studentsArray = BehaviorSubject<[Students]>(value: [Students]())
     
-    
-    
     init() {
-        
         sRepo.veritabaniKopyala()
         studentsArray = sRepo.studentsArray
-        
     }
     
     func search(searchName: String) {
