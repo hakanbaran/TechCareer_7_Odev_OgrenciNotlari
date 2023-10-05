@@ -17,6 +17,8 @@ class HomeVCViewModel {
     
     
     init() {
+        
+        sRepo.veritabaniKopyala()
         studentsArray = sRepo.studentsArray
         
     }

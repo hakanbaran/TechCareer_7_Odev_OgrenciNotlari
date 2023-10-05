@@ -29,8 +29,6 @@ class StudentCell: UITableViewCell {
         return label
     }()
     
-    
-    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         contentView.addSubview(studentName)
@@ -48,7 +46,6 @@ class StudentCell: UITableViewCell {
         
         studentName.frame = CGRect(x: width/25, y: height/5, width: width/3, height: height/2)
         studentScore.frame = CGRect(x: width-width/10-width/25, y: height/5, width: width/10, height: height/2)
-        
     }
     
     public func configure(name: String, score: String  ) {

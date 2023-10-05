@@ -26,6 +26,12 @@
 		D48750302ACE253B00B7A737 /* HomeVCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D487502F2ACE253B00B7A737 /* HomeVCViewModel.swift */; };
 		D48750322ACE254B00B7A737 /* RecordingVCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48750312ACE254B00B7A737 /* RecordingVCViewModel.swift */; };
 		D48750342ACE255800B7A737 /* DetailsVCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48750332ACE255800B7A737 /* DetailsVCViewModel.swift */; };
+		D48750432ACE316000B7A737 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D487503A2ACE316000B7A737 /* FMDatabaseAdditions.m */; };
+		D48750442ACE316000B7A737 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D487503B2ACE316000B7A737 /* FMDatabaseQueue.m */; };
+		D48750452ACE316000B7A737 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = D487503E2ACE316000B7A737 /* FMDatabasePool.m */; };
+		D48750462ACE316000B7A737 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = D48750412ACE316000B7A737 /* FMResultSet.m */; };
+		D48750472ACE316000B7A737 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = D48750422ACE316000B7A737 /* FMDatabase.m */; };
+		D48750492ACE31BC00B7A737 /* TechCareer_7_Odev.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = D48750482ACE31BC00B7A737 /* TechCareer_7_Odev.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +51,20 @@
 		D487502F2ACE253B00B7A737 /* HomeVCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCViewModel.swift; sourceTree = "<group>"; };
 		D48750312ACE254B00B7A737 /* RecordingVCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingVCViewModel.swift; sourceTree = "<group>"; };
 		D48750332ACE255800B7A737 /* DetailsVCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVCViewModel.swift; sourceTree = "<group>"; };
+		D48750362ACE2DEA00B7A737 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		D48750372ACE315F00B7A737 /* TechCareer_7_Odev_OgrenciNotlari-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TechCareer_7_Odev_OgrenciNotlari-Bridging-Header.h"; sourceTree = "<group>"; };
+		D48750382ACE316000B7A737 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		D48750392ACE316000B7A737 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		D487503A2ACE316000B7A737 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		D487503B2ACE316000B7A737 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		D487503C2ACE316000B7A737 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		D487503D2ACE316000B7A737 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		D487503E2ACE316000B7A737 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		D487503F2ACE316000B7A737 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		D48750402ACE316000B7A737 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		D48750412ACE316000B7A737 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		D48750422ACE316000B7A737 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		D48750482ACE31BC00B7A737 /* TechCareer_7_Odev.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = TechCareer_7_Odev.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +88,7 @@
 			children = (
 				D4874FFD2ACE133700B7A737 /* TechCareer_7_Odev_OgrenciNotlari */,
 				D4874FFC2ACE133700B7A737 /* Products */,
+				D48750352ACE2DE900B7A737 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +109,19 @@
 				D48750122ACE142B00B7A737 /* Data */,
 				D48750042ACE133700B7A737 /* Main.storyboard */,
 				D487500C2ACE133800B7A737 /* Info.plist */,
+				D48750482ACE31BC00B7A737 /* TechCareer_7_Odev.sqlite */,
+				D487503C2ACE316000B7A737 /* FMDatabase.h */,
+				D48750422ACE316000B7A737 /* FMDatabase.m */,
+				D48750392ACE316000B7A737 /* FMDatabaseAdditions.h */,
+				D487503A2ACE316000B7A737 /* FMDatabaseAdditions.m */,
+				D487503D2ACE316000B7A737 /* FMDatabasePool.h */,
+				D487503E2ACE316000B7A737 /* FMDatabasePool.m */,
+				D48750382ACE316000B7A737 /* FMDatabaseQueue.h */,
+				D487503B2ACE316000B7A737 /* FMDatabaseQueue.m */,
+				D48750402ACE316000B7A737 /* FMDB.h */,
+				D487503F2ACE316000B7A737 /* FMResultSet.h */,
+				D48750412ACE316000B7A737 /* FMResultSet.m */,
+				D48750372ACE315F00B7A737 /* TechCareer_7_Odev_OgrenciNotlari-Bridging-Header.h */,
 			);
 			path = TechCareer_7_Odev_OgrenciNotlari;
 			sourceTree = "<group>";
@@ -165,6 +199,14 @@
 			path = Repo;
 			sourceTree = "<group>";
 		};
+		D48750352ACE2DE900B7A737 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D48750362ACE2DEA00B7A737 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -204,6 +246,7 @@
 				TargetAttributes = {
 					D4874FFA2ACE133700B7A737 = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
 					};
 				};
 			};
@@ -234,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D487500B2ACE133800B7A737 /* LaunchScreen.storyboard in Resources */,
+				D48750492ACE31BC00B7A737 /* TechCareer_7_Odev.sqlite in Resources */,
 				D48750082ACE133800B7A737 /* Assets.xcassets in Resources */,
 				D48750062ACE133700B7A737 /* Main.storyboard in Resources */,
 			);
@@ -250,13 +294,18 @@
 				D48750342ACE255800B7A737 /* DetailsVCViewModel.swift in Sources */,
 				D487502C2ACE215400B7A737 /* RecordingVC.swift in Sources */,
 				D487502E2ACE215F00B7A737 /* DetailsVC.swift in Sources */,
+				D48750442ACE316000B7A737 /* FMDatabaseQueue.m in Sources */,
 				D48750322ACE254B00B7A737 /* RecordingVCViewModel.swift in Sources */,
 				D48750032ACE133700B7A737 /* HomeVC.swift in Sources */,
 				D4874FFF2ACE133700B7A737 /* AppDelegate.swift in Sources */,
 				D487501D2ACE1AC000B7A737 /* Students.swift in Sources */,
+				D48750462ACE316000B7A737 /* FMResultSet.m in Sources */,
 				D48750012ACE133700B7A737 /* SceneDelegate.swift in Sources */,
 				D487501B2ACE155E00B7A737 /* StudentCell.swift in Sources */,
+				D48750452ACE316000B7A737 /* FMDatabasePool.m in Sources */,
 				D487501F2ACE1B4000B7A737 /* StudentsRepository.swift in Sources */,
+				D48750432ACE316000B7A737 /* FMDatabaseAdditions.m in Sources */,
+				D48750472ACE316000B7A737 /* FMDatabase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +455,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 373Z282HAT;
@@ -424,6 +474,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hakanbaran.TechCareer-7-Odev-OgrenciNotlari";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TechCareer_7_Odev_OgrenciNotlari/TechCareer_7_Odev_OgrenciNotlari-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -434,6 +486,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 373Z282HAT;
@@ -452,6 +505,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hakanbaran.TechCareer-7-Odev-OgrenciNotlari";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TechCareer_7_Odev_OgrenciNotlari/TechCareer_7_Odev_OgrenciNotlari-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
