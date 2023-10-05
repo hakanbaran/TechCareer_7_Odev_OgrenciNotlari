@@ -14,5 +14,4 @@ class DetailsVCViewModel {
     func update(student_id:Int, student_name:String, student_score:String) {
         sRepo.updateStudent(student_id: student_id, student_name: student_name, student_score: student_score)
     }
-    
 }

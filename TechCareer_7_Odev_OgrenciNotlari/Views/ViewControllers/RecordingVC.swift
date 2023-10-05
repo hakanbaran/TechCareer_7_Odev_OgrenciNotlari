@@ -14,22 +14,33 @@ class RecordingVC: UIViewController {
     @IBOutlet weak var scoreLabel: UITextField!
     @IBOutlet weak var saveButton: UIButton!
     
-    
-    
     var viewModel = RecordingVCViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         saveButton.layer.cornerRadius = 10
-        
     }
     
     @IBAction func saveButton(_ sender: Any) {
         if let name = nameLabel.text, let score = scoreLabel.text {
-            viewModel.save(student_name: name, student_score: score)
-            self.dismiss(animated: true)
+            
+            if name == "" || score == "" {
+                alertMessage()
+            } else {
+                viewModel.save(student_name: name, student_score: score)
+            }
+            
+            
         }
+    }
+    
+    
+    func alertMessage() {
+        let alert = UIAlertController(title: "Uppss!!!", message: "Please fill in the blank fields...", preferredStyle: .alert)
+        
+        let okButton = UIAlertAction(title: "OK", style: .default)
+        alert.addAction(okButton)
+        self.present(alert, animated: true)
     }
 }
 
